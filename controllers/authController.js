@@ -48,7 +48,7 @@ const loginUser = async (req, res) => {
   }
 
   const token = generateToken();
-  db.sessions[token] = user.id;
+  db.sessions[token] = findUser.id;
 
   res.status(200).json({
     message: "Login Successfull",

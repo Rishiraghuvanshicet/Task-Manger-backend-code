@@ -1,6 +1,6 @@
 
 const db ={
-    user:[],
+    users:[],
     tasks:{},
     sessions:{}
 }

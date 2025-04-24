@@ -31,7 +31,7 @@ const deleteTask = (req, res) => {
     return res.status(404).json({ message: "Task Not Found" });
   }
 
-  userTasks.Splice(taskIndex, 1);
+  userTasks.splice(taskIndex, 1);
   res.status(200).json({ message: "Task Deleted Successfully" });   
 };
 
