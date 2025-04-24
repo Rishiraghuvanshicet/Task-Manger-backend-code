@@ -4,7 +4,7 @@ const authMiddleware = (req, res, next) => {
   const authHeader = req.headers["authorization"];
   console.log("Auth Header:", authHeader); 
   if (!authHeader) {
-    return res.status(401).json({ message: "Unauthorized before Split" });
+    return res.status(401).json({ message: "Unauthorized " });
   }
 
   const [scheme, token] = authHeader.split(" ");
